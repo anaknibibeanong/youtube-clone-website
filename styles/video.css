@@ -1,0 +1,114 @@
+
+.thumbnail {
+    border-radius:15px;
+    width: 100%;
+    margin-top: 0;
+}
+.thumbnail:hover{
+    cursor: pointer;
+}
+
+.video-title{
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+
+.video-info-div{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+    padding-top: 10px;
+}
+
+
+.thumbnail-div{
+    width: 100%;
+    position: relative;
+    padding-top: 0;
+}
+
+.video-author, .video-stats{
+    color: #606060;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.channel-profile{
+    width: 36px;
+    border-radius: 50px;
+} 
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 30px;
+}
+@media (max-width: 800px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 799px) and (max-width: 1299px){
+    .video{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1100px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.video-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-weight: 500;
+}
+
+
+.channel-profile-button{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    padding: 0;
+} 
+
+.channel-profile-button:hover{
+    cursor: pointer;
+}
+
+
+.channel-profile-button .tooltip{
+    background-color: gray;
+    font-size: 12px;
+    padding: 10px 5px;
+    color: white;
+    border-radius: 5px;
+    position:absolute;
+    top: 40px;
+    right: -40px;
+
+
+    opacity: 0;
+    transition: opacity 0.15s;
+    
+    white-space: nowrap;
+    
+}
+
+.channel-profile-button:hover .tooltip{
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+
+

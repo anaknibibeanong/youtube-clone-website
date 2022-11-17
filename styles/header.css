@@ -1,0 +1,222 @@
+
+.header{
+    height: 56px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    position:fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    z-index: 100;
+
+    background-color: white;
+    padding-top: 0;
+}
+
+.left-section{
+    display: flex;
+    margin-left: 20px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-shrink: 0;
+    padding-top: 0;
+}
+
+.mid-section{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 0;
+}
+
+.right-section{
+    width: 140px;
+    display: flex;
+    justify-content:space-between;
+    margin-right: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 0;
+}
+
+.search-bar{
+    width: 0;
+    flex:1;
+    height: 35px;
+    font-size: 16px;
+    border: 1px solid rgb(196, 195, 195);
+    box-shadow:inset 1px 2px 5px rgba(0,0,0,0.08);
+    padding-left: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.search-bar::placeholder{
+    font-size: 16px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.logo{
+    width: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.search-icon{
+   width: 24px; 
+   height: 24px;
+}
+.search-button{
+    width: 60px;
+    height: 39px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(174, 174, 174);  
+    background-color: #f8f8f8;
+    margin-left:-1px;
+
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    position: relative;
+}
+.search-button:hover{
+    background-color: rgb(240, 238, 238);
+    cursor: pointer;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-button .tooltip,
+.notification-button .tooltip,
+.logo-container .tooltip
+{
+    position: absolute;
+    bottom: -50px;
+
+    background-color: rgb(101, 101, 101);
+    color: white;
+    padding-top: 8px;
+    padding-bottom:8px;
+    padding-left: 10px;
+    padding-right:10px;
+    border-radius: 6px;
+    font-size: 12px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-button:hover .tooltip,
+.notification-button:hover .tooltip,
+.logo-container:hover .tooltip{
+    opacity: .9;
+}
+
+.voice-search-icon,
+.notifications-icon,
+.upload-icon,
+.hamburger{
+    width: 26px;
+    height: 26px;
+    align-items: center;
+    display: flex;
+}
+
+.notification-button,
+.upload-button,
+.hamburger-button, 
+.areen-button{
+    background-color: white;
+    width:40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.areen-button{
+    padding-left: 20px;
+}
+
+.areen{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+}
+.hamburger-button:hover, 
+.voice-search-button:hover, 
+.notification-button:hover,
+.upload-button:hover{
+    background-color: rgb(241, 240, 240);
+    cursor: pointer;
+}
+.areen-button:hover{
+    cursor: pointer;
+
+}
+.voice-search-button{
+    background-color: rgb(248, 248, 248);
+    width:40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.notification-button{
+    position: relative;
+    margin-right: 10px;
+}
+.notification-count{
+    position: absolute;
+    background-color: #c00;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right:4px;
+    border-radius: 10px;
+    top:3px;
+    right:-6px;
+    font-size:12px;
+    border-color: white;
+    border: 1.5px;
+    border-style: solid;
+}
+.search-button,
+.voice-search-button,
+.upload-button,
+.notification-button,
+.logo-container{
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
